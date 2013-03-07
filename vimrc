@@ -1,4 +1,5 @@
 "=> VIM config file
+colorscheme elflord
 
 set tabstop=4
 set autoindent
@@ -6,7 +7,6 @@ syntax enable
 set ruler
 set nowrap
 set relativenumber
-colorscheme elflord
 
 "Sets linenumbers and toggles relatve/absolute with C-n
 function! NumberToggle()
