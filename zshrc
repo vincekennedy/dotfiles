@@ -40,14 +40,18 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow)
+plugins=(git git-flow gitfast)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export ANDROID_HOME=$HOME/android-sdk-macosx
 export PATH=$PATH:/usr/local/bin:/Users/vincekennedy/.rvm/gems/ruby-1.9.3-p392/bin:/Users/vincekennedy/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/vincekennedy/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/vincekennedy/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$ANDROID_HOME/platform_tools:$ANDROID_HOME/platforms:$ANDROID_HOME/tools	
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 alias gcam='git commit -a -m'
+alias gaa='git add -A'
 
 #VI Mode in Command Line
 bindkey -v
+
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh

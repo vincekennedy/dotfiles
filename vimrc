@@ -1,7 +1,7 @@
 "=> VIM config file
 "colorscheme elflord
 
-set tabstop=4
+set tabstop=2
 set autoindent
 syntax enable
 set ruler
@@ -19,7 +19,5 @@ endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
 
-" append a semicolon
+"Append a semicolon
 nnoremap <C-;> A;<Esc>
-
-"Sets relative/absolute numbers based on focus
