@@ -42,6 +42,8 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git git-flow gitfast)
 
+DISABLE_UPDATE_PROMPT=true
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
