@@ -52,7 +52,7 @@ export PATH=$PATH:/usr/local/bin:/Users/vincekennedy/.rvm/gems/ruby-1.9.3-p392/b
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 alias gcam='git commit -a -m'
 alias gaa='git add -A'
-
+alias gffs='git flow feature start'
 #VI Mode in Command Line
 bindkey -v
 
