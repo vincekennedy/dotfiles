@@ -53,6 +53,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 alias gcam='git commit -a -m'
 alias gaa='git add -A'
 alias gffs='git flow feature start'
+alias subl='subl .'
 #VI Mode in Command Line
 bindkey -v
 
