@@ -53,8 +53,36 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 alias gcam='git commit -a -m'
 alias gaa='git add -A'
 alias gffs='git flow feature start'
-alias subl='subl .'
+alias glall='git pull --all'
+gbclean(){ 
+  gb -a | grep -vEi 'develop|weekly|master|origin' | xargs git branch -D
+}
+
 #VI Mode in Command Line
 bindkey -v
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+
+#Changing cursoer based on vim-mode input mode
+function zle-keymap-select zle-line-init
+{
+  # change cursor shape in iTerm2
+  case $KEYMAP in
+    vicmd)      print -n -- "\E]50;CursorShape=0\C-G";;  # block cursor
+    viins|main) print -n -- "\E]50;CursorShape=1\C-G";;  # line cursor
+  esac
+
+  zle reset-prompt
+  zle -R
+}
+
+function zle-line-finish
+{
+  print -n -- "\E]50;CursorShape=0\C-G"  # block cursor
+}
+
+zle -N zle-line-init
+zle -N zle-line-finish
+zle -N zle-keymap-select
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
