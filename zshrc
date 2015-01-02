@@ -50,12 +50,13 @@ source $ZSH/oh-my-zsh.sh
 export ANDROID_HOME=$HOME/android-sdk-macosx
 export PATH=$PATH:/usr/local/bin:/Users/vincekennedy/.rvm/gems/ruby-1.9.3-p392/bin:/Users/vincekennedy/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/vincekennedy/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/vincekennedy/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$ANDROID_HOME/platform_tools:$ANDROID_HOME/platforms:$ANDROID_HOME/tools	
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 alias gcam='git commit -a -m'
 alias gaa='git add -A'
 alias gffs='git flow feature start'
 alias glall='git pull --all'
 gbclean(){ 
-  gb -a | grep -vEi 'develop|weekly|master|origin' | xargs git branch -D
+  gb -a --merged develop | grep -vEi 'develop|weekly|master|origin' | xargs git branch -D
 }
 
 #VI Mode in Command Line
