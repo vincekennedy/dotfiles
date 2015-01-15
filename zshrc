@@ -56,6 +56,7 @@ alias gaa='git add -A'
 alias gffs='git flow feature start'
 alias glall='git pull --all'
 alias gpf='gp -f'
+alias gbd = 'gp -D'
 
 gbclean(){ 
   gb -a --merged develop | grep -vEi 'develop|weekly|master|origin' | xargs git branch -D
