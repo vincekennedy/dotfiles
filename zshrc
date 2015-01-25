@@ -62,6 +62,11 @@ gbclean(){
   gb -a --merged develop | grep -vEi 'develop|weekly|master|origin' | xargs git branch -D
 }
 
+#Make directory and move to it
+function mcd() {  
+  test -e "$1" || mkdir -p "$1"; cd "$1";  
+}  
+
 #VI Mode in Command Line
 bindkey -v
 
