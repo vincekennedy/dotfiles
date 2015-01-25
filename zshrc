@@ -7,6 +7,9 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 
+#run fortune | cowsay
+fortune | cowsay
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -56,14 +59,13 @@ alias gaa='git add -A'
 alias gffs='git flow feature start'
 alias glall='git pull --all'
 alias gpf='gp -f'
-alias gbd = 'gp -D'
 
 gbclean(){ 
   gb -a --merged develop | grep -vEi 'develop|weekly|master|origin' | xargs git branch -D
 }
 
 #Make directory and move to it
-function mcd() {  
+mcd() {  
   test -e "$1" || mkdir -p "$1"; cd "$1";  
 }  
 
