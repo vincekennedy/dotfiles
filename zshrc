@@ -28,7 +28,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 alias c='clear'
 alias ping='ping -c 3'
 alias dotfiles='cd ~/.dotfiles'
-alias fuck='sudo $(history -p \!\!)'
+alias fuck='sudo $(fc -ln -1)'
 
 #Directories
 ##Peoplocity
