@@ -7,8 +7,6 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 
-#run fortune | cowsay
-fortune | cowsay
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -24,9 +22,13 @@ export ANDROID_HOME=$HOME/android-sdk-macosx
 export PATH=$PATH:/usr/local/bin:/Users/vincekennedy/.rvm/gems/ruby-1.9.3-p392/bin:/Users/vincekennedy/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/vincekennedy/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/vincekennedy/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$ANDROID_HOME/platform_tools:$ANDROID_HOME/platforms:$ANDROID_HOME/tools	
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+#run fortune | cowsay
+/opt/boxen/homebrew/bin/fortune | /opt/boxen/homebrew/bin/cowsay
+
 alias c='clear'
 alias ping='ping -c 3'
 alias dotfiles='cd ~/.dotfiles'
+alias fuck='sudo $(history -p \!\!)'
 
 #Directories
 ##Peoplocity
