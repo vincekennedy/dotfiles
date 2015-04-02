@@ -35,6 +35,7 @@ alias fuck='sudo $(fc -ln -1)'
 alias pplios='cd ~/dt/peoplocity-ios/'
 alias ppl='cd ~/dt/peoplocity/'
 alias hba='cd ~/homebaradvantage'
+alias dt='cd ~/dt'
 #OSX Specific
 alias f='open -a Finder ./'
 
