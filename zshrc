@@ -30,6 +30,7 @@ alias ping='ping -c 3'
 alias dotfiles='cd ~/.dotfiles'
 alias fuck='sudo $(fc -ln -1)'
 
+alias whisper='say -v whisper'
 #Directories
 ##Peoplocity
 alias pplios='cd ~/dt/peoplocity-ios/'
