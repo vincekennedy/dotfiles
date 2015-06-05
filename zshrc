@@ -53,6 +53,7 @@ alias gpf='gp -f'
 
 gbclean(){ 
   gb -a --merged develop | grep -vEi 'develop|weekly|master|origin' | xargs git branch -D
+	find . -name "*.orig" -type f -delete
 }
 
 #Make directory and move to it
