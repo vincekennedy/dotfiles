@@ -33,10 +33,9 @@ alias fuck='sudo $(fc -ln -1)'
 alias whisper='say -v whisper'
 #Directories
 ##Peoplocity
-alias pplios='cd ~/dt/peoplocity-ios/'
-alias ppl='cd ~/dt/peoplocity/'
 alias hba='cd ~/homebaradvantage'
 alias dt='cd ~/dt'
+alias republic='cd ~/dt/republic-mobile-android'
 #OSX Specific
 alias f='open -a Finder ./'
 
@@ -54,6 +53,7 @@ alias gpf='gp -f'
 gbclean(){ 
   gb -a --merged develop | grep -vEi 'develop|weekly|master|origin' | xargs git branch -D
 	find . -name "*.orig" -type f -delete
+	git fetch --prune
 }
 
 #Make directory and move to it
