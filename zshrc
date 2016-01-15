@@ -49,6 +49,7 @@ alias gcamall='gaa; gcam'
 alias gffs='git flow feature start'
 alias glall='git pull --all'
 alias gpf='gp -f'
+alias gpo='git push origin'
 
 gbclean(){ 
   gb -a --merged develop | grep -vEi 'develop|weekly|master|origin' | xargs git branch -D
