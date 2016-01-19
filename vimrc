@@ -7,6 +7,7 @@ syntax enable
 set ruler
 set nowrap
 set number
+set clipboard=unnamed
 
 "Sets linenumbers and toggles relatve/absolute with C-n
 function! NumberToggle()
