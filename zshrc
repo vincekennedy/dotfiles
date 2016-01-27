@@ -23,7 +23,7 @@ export PATH=$PATH:/usr/local/bin:/Users/vincekennedy/.rvm/gems/ruby-1.9.3-p392/b
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 #run fortune | cowsay
-/opt/boxen/homebrew/bin/fortune | /opt/boxen/homebrew/bin/cowsay
+/opt/boxen/homebrew/bin/fortune -a | /opt/boxen/homebrew/bin/cowsay
 
 alias c='clear'
 alias ping='ping -c 3'
