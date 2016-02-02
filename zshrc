@@ -39,6 +39,9 @@ alias republic='cd ~/dt/republic-mobile-android'
 #OSX Specific
 alias f='open -a Finder ./'
 
+#Gradle
+alias td='./gradlew testDebug'
+
 #POW
 alias kapow='touch tmp/restart.txt'
 
