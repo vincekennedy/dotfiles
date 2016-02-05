@@ -1,3 +1,8 @@
+#Start up commands
+#run fortune | cowsay
+fortune -a | cowsay
+cd
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -22,8 +27,6 @@ export ANDROID_HOME=$HOME/android-sdk-macosx
 export PATH=$PATH:/usr/local/bin:/Users/vincekennedy/.rvm/gems/ruby-1.9.3-p392/bin:/Users/vincekennedy/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/vincekennedy/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/vincekennedy/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$ANDROID_HOME/platform_tools:$ANDROID_HOME/platforms:$ANDROID_HOME/tools	
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-#run fortune | cowsay
-/opt/boxen/homebrew/bin/fortune -a | /opt/boxen/homebrew/bin/cowsay
 
 alias c='clear'
 alias ping='ping -c 3'
@@ -32,10 +35,7 @@ alias fuck='sudo $(fc -ln -1)'
 
 alias whisper='say -v whisper'
 #Directories
-##Peoplocity
-alias hba='cd ~/homebaradvantage'
-alias dt='cd ~/dt'
-alias republic='cd ~/dt/republic-mobile-android'
+
 #OSX Specific
 alias f='open -a Finder ./'
 
