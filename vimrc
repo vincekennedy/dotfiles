@@ -3,11 +3,11 @@
 
 set tabstop=2
 set autoindent
-syntax enable
 set ruler
 set nowrap
 set number
-set clipboard=unnamed
+set clipboard=unnamedplus
+syntax enable
 
 "Sets linenumbers and toggles relatve/absolute with C-n
 function! NumberToggle()
@@ -19,6 +19,3 @@ function! NumberToggle()
 endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
-
-"Append a semicolon
-nnoremap <C-;> A;<Esc>
