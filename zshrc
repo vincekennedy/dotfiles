@@ -1,7 +1,6 @@
 #Start up commands
 #run fortune | cowsay
 fortune -a | cowsay
-cd
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
