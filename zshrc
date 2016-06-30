@@ -1,7 +1,6 @@
 #Start up commands
 #run fortune | cowsay
 fortune -a | cowsay
-cd
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -23,9 +22,10 @@ DISABLE_UPDATE_PROMPT=true
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export ANDROID_HOME=$HOME/android-sdk-macosx
-export PATH=$PATH:/usr/local/bin:/Users/vincekennedy/.rvm/gems/ruby-1.9.3-p392/bin:/Users/vincekennedy/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/vincekennedy/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/vincekennedy/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$ANDROID_HOME/platform_tools:$ANDROID_HOME/platforms:$ANDROID_HOME/tools	
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export ANDROID_HOME=$HOME/Development/sdk
+export PATH=$PATH:/usr/local/bin::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:
+export PATH=$PATH:$ANDROID_HOME/platform_tools:$ANDROID_HOME/platforms:$ANDROID_HOME/tools:$ANDROID_HOME/ndk-bundle/
+export PATH=$PATH:$HOME/bin:/usr/local/bin
 
 
 alias c='clear'
