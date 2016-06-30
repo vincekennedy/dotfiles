@@ -43,7 +43,7 @@ alias f='open -a Finder ./'
 alias td='./gradlew testDebug'
 
 #POW
-alias kapow='touch tmp/restart.txt'
+alias kapow='touch ~/.pow/restart.txt'
 
 #Git aliases
 alias gcam='git commit -a -m'
@@ -97,3 +97,5 @@ zle -N zle-line-finish
 zle -N zle-keymap-select
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
