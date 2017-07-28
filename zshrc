@@ -1,6 +1,6 @@
 #Start up commands
 #run fortune | cowsay
-fortune -a | cowsay
+#fortune -a | cowsay
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -26,6 +26,7 @@ export ANDROID_HOME=$HOME/Development/sdk
 export PATH=$PATH:/usr/local/bin::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:
 export PATH=$PATH:$ANDROID_HOME/platform_tools:$ANDROID_HOME/platforms:$ANDROID_HOME/tools:$ANDROID_HOME/ndk-bundle/
 export PATH=$PATH:$HOME/bin:/usr/local/bin
+export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
 
 
 alias c='clear'
@@ -53,6 +54,7 @@ alias gffs='git flow feature start'
 alias glall='git pull --all'
 alias gpf='gp -f'
 alias gpo='git push origin'
+alias gcd='git checkout develop || git pull'
 
 gbclean(){ 
   gb -a --merged develop | grep -vEi 'develop|weekly|master|origin' | xargs git branch -D
